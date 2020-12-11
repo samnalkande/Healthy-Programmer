@@ -35,13 +35,13 @@ if __name__ == '__main__':
 
         if time() - init_eyes >eyessecs:
             print("Eye exercise time. Enter 'doneeyes' to stop the alarm.")
-            musiconloop('Eye.mp3.mp3', 'doneeyes')
+            musiconloop('Eye.mp3', 'doneeyes')
             init_eyes = time()
             log_now("Eyes Relaxed at")
 
         if time() - init_exercise > exsecs:
             print("Physical Activity Time. Enter 'donephy' to stop the alarm.")
-            musiconloop('Exercise.mp3.mp3', 'donephy')
+            musiconloop('Exercise.mp3', 'donephy')
             init_exercise = time()
             log_now("Physical Activity done at")
 
